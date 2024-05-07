@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        header 
+        {
+            background-color: #191717;
+            color: #fff;
+            padding: 10px;
+            text-align: justify;
+        }
+        h5 
+        {
+            display: inline; /* Display inline */
+            margin: 0;
+        }
+        nav 
+        {
+            display: inline; /* Display inline */
+            margin-left: 20px; /* Add margin for spacing */
+        }
+        nav a 
+        {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 80px; /* Add spacing between links */
+        }
+
+        main 
+        {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+        h2
+        {
+            display: inline;
+            margin-left: 70px;
+        }
+        form
+        {
+            display: inline ;
+            margin-left: 90px;
+        }
+
+        main2
+        {
+            background-color: rgb(203, 130, 46);
+            color: black;
+            padding: 10px;
+            text-align: center;
+            display: block;
+        }
+        cat
+        {
+            background-color: rgb(255, 195, 126);
+            color: black;
+            padding: 30px;
+            text-align: center;
+            text-decoration: underline;
+            display: block;
+        }
+        .box
+        {
+            padding: 30px;
+
+            width: 100px;
+            height: 50px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+            line-height: 50px;
+            text-decoration: none;
+            color: inherit;
+        }
+        .container {
+            text-align: center;
+        }
+        /* CSS styles for the container's child divs */
+        .container > div {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        offer
+        {
+            background-color: rgb(186, 178, 169);
+            color: black;
+            padding: 30px;
+            text-align: center;
+            text-decoration: underline;
+            display: block;
+        }
+        .box1 
+        {
+            width: 200px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+            padding: 30px;
+        }
+        /* CSS styles for the image */
+        .box img {
+            width: 150px;
+            height: 150px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        /* CSS styles for the rating stars */
+        .rating {
+            color: orange;
+            margin-bottom: 10px;
+        }
+        /* CSS styles for the price */
+        .price {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        /* CSS styles for the "add to cart" button */
+        .add-to-cart {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        footer 
+        {
+            background-color: #191717;
+            color: #fff;
+            padding: 20px;
+        
+            display: flex; /* Align children vertically */
+            justify-content: space-around; /* Equal space between children */
+            flex-wrap: wrap; /* Allow children to wrap to next line */
+        }
+        footer div 
+        {
+            margin-bottom: 20px;
+            flex: 1; /* Equal width for all children */
+        }
+        footer h3 
+        {
+            margin-top: 0;
+        }
+        footer ul 
+        {
+            list-style-type: none;
+            padding: 0;
+            text-align: left; /* Align list items to the left */
+        }
+        footer ul li 
+        {
+            margin-bottom: 5px;
+        }
+        img 
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    </style>
+
+
+</head>
+<body>
+<header>
+    <h5>Set 50% off. Use Code "sale 50%"
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="reg.html">Register</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="cont.html">Checkout</a>
+        </nav>
+    </h5>
+</header>
+
+<main >
+    <h5>Order online or call us: 03110371211</h5>
+    <h2>F2022387030</h2>
+    <form action="/search" method="get">
+        <input type="text" id="search" name="q" placeholder="Enter product name...">
+        <button type="submit">Search</button>
+    </form>
+</main>
+
+<main2>
+        <h5 style="display: inline-block;">
+            <a href="home.html" style="margin-right: 35px; color: #f4f4f4;" >Home</a>
+            <a href="groceries.html" style="margin-right: 35px;color: #f4f4f4;">Groceries</a>
+            <a href="household.html" style="margin-right: 35px;color: #f4f4f4;">Household</a>
+            <a href="personal_care.html" style="margin-right: 35px;color: #f4f4f4;">Personal Care</a>
+            <a href="packaged_foods.html"style="margin-right: 35px;color: #f4f4f4;">Packaged Foods</a>
+            <a href="beverages.html"style="margin-right: 35px;color: #f4f4f4;">Beverages</a>
+            <a href="offers.html"style="margin-right: 35px;color: #f4f4f4;">Offers</a>
+            <a href="contact.html"style="margin-right: 35px;color: #f4f4f4;">Contact</a>
+        </h5>
+</main2>
+
+<cat>
+
+    <h2>CATEGORIES</h2>
+    <!-- First line of boxes -->
+    <div class="container">
+        <div>
+            <a href="category1.html" class="box">Electronics</a>
+        </div>
+        <div>
+            <a href="category2.html" class="box">Clothing</a>
+        </div>
+        <div>
+            <a href="category3.html" class="box">Home</a>
+        </div>
+        <div>
+            <a href="category4.html" class="box">Automotive</a>
+        </div>
+        <div>
+            <a href="category5.html" class="box">Health</a>
+        </div>
+        <div>
+            <a href="category6.html" class="box">Sports</a>
+        </div>
+    </div>
+    <!-- Second line of boxes -->
+    <div class="container">
+        <div>
+            <a href="category7.html" class="box">Food</a>
+        </div>
+        <div>
+            <a href="category8.html" class="box">Personal Care</a>
+        </div>
+        <div>
+            <a href="category9.html" class="box">Games</a>
+        </div>
+        <div>
+            <a href="category10.html" class="box">Literature</a>
+        </div>
+        <div>
+            <a href="category11.html" class="box">Travel</a>
+        </div>
+        <div>
+            <a href="category12.html" class="box">Beverages</a>
+        </div>
+    </div>
+</cat>    
+
+<offer>
+    <h2 >NEW OFFERS</h2>
+    <!-- First line of boxes -->
+    <div class="container1">
+        <div class="box1">
+            <img src="images/14.png" alt="Fried-Gram">
+            <div class="rating">★★★★★</div>
+            <div class="price">$10</div>
+            <a href="offer1.html" class="add-to-cart">Add to Cart</a>
+        </div>
+        <div class="box1">
+            <img src="images/15.png" alt="Navaratan-Dal">
+            <div class="rating">★★★★☆</div>
+            <div class="price">$12</div>
+            <a href="offer2.html" class="add-to-cart">Add to Cart</a>
+        </div>
+        <div class="box1">
+            <img src="images/16.png" alt="White-Peasmatar">
+            <div class="rating">★★★★★</div>
+            <div class="price">$8</div>
+            <a href="offer3.html" class="add-to-cart">Add to Cart</a>
+        </div>
+        <div class="box1">
+            <img src="images/17.png" alt="Channa-Dal">
+            <div class="rating">★★★☆☆</div>
+            <div class="price">$9</div>
+            <a href="offer4.html" class="add-to-cart">Add to Cart</a>
+        </div>
+    </div>
+</offer>
+
+
+<footer>
+    <div class="contact">
+        <h3>CONTACT</h3>
+        <p>Email: example@example.com</p>
+        <p>Phone: 123-456-7890</p>
+        <p>Address: 123 Street, City, Country</p>
+    </div>
+    <div class="info">
+        <h3>INFORMATION</h3>
+        <ul>
+        <li>Contact Us</li>
+        <li>Short Codes</li>
+        <li>FAQ's</li>
+        </ul>
+    </div>
+
+    <div class="categories">
+        <h3>CATEGORIES</h3>
+        <ul>
+            <li>Groceries</li>
+            <li>Household</li>
+            <li>Personal Care</li>
+            <li>Packaged Foods</li>
+            <li>Beverages</li>
+        </ul>
+    </div>
+
+    <div class="profile">
+        <h3>PROFILE</h3>
+        <p>Store</p>
+        <p>My Cart</p>
+        <p>Login</p>
+        <p>Create Account</p>
+        <!-- Other profile information -->
+    </div>
+
+    <p>&copy; 2017 Super Market. All Rights Reserved | Designed by Ammara</p>
+</footer>
+
+
+</body>
+</html>

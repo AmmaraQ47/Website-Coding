@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        header 
+        {
+            background-color: #191717;
+            color: #fff;
+            padding: 10px;
+            text-align: justify;
+        }
+        h5 
+        {
+            display: inline; /* Display inline */
+            margin: 0;
+        }
+        nav 
+        {
+            display: inline; /* Display inline */
+            margin-left: 20px; /* Add margin for spacing */
+        }
+        nav a 
+        {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 80px; /* Add spacing between links */
+        }
+
+        main 
+        {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+        h2
+        {
+            display: inline;
+            margin-left: 70px;
+        }
+  
+        main2
+        {
+            background-color: rgb(203, 130, 46);
+            color: black;
+            padding: 10px;
+            text-align: center;
+            display: block;
+        }
+        
+        footer 
+        {
+            background-color: #191717;
+            color: #fff;
+            padding: 20px;
+        
+            display: flex; /* Align children vertically */
+            justify-content: space-around; /* Equal space between children */
+            flex-wrap: wrap; /* Allow children to wrap to next line */
+        }
+        footer div 
+        {
+            margin-bottom: 20px;
+            flex: 1; /* Equal width for all children */
+        }
+        footer h3 
+        {
+            margin-top: 0;
+        }
+        footer ul 
+        {
+            list-style-type: none;
+            padding: 0;
+            text-align: left; /* Align list items to the left */
+        }
+        footer ul li 
+        {
+            margin-bottom: 5px;
+        }
+        img 
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+               
+        
+   .container {
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        /* CSS styles for the login box */
+        .login-box {
+            width: 100%;
+        }
+        .login-box input[type="text"],
+        .login-box input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box; /* Ensure padding and border included in width */
+        }
+        .login-box input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .login-box .forgot-password {
+            text-align: right;
+            margin-bottom: 10px;
+        }
+        .login-box .register-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+                .container {
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+<header>
+    <h5>Set 50% off. Use Code "sale 50%"
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#login">Login</a>
+            <a href="#register">Register</a>
+            <a href="#checkout">Checkout</a>
+        </nav>
+    </h5>
+</header>
+
+<main >
+    <h5>Order online or call us: 03110371211</h5>
+    <h2>F2022387030</h2>
+    <form action="/search" method="get">
+        <input type="text" id="search" name="q" placeholder="Enter product name...">
+        <button type="submit">Search</button>
+    </form>
+</main>
+
+<main2>
+        <h5 style="display: inline-block;">
+            <a href="home.html" style="margin-right: 35px; color: #f4f4f4;" >Home</a>
+            <a href="groceries.html" style="margin-right: 35px;color: #f4f4f4;">Groceries</a>
+            <a href="household.html" style="margin-right: 35px;color: #f4f4f4;">Household</a>
+            <a href="personal_care.html" style="margin-right: 35px;color: #f4f4f4;">Personal Care</a>
+            <a href="packaged_foods.html"style="margin-right: 35px;color: #f4f4f4;">Packaged Foods</a>
+            <a href="beverages.html"style="margin-right: 35px;color: #f4f4f4;">Beverages</a>
+            <a href="offers.html"style="margin-right: 35px;color: #f4f4f4;">Offers</a>
+            <a href="contact.html"style="margin-right: 35px;color: #f4f4f4;">Contact</a>
+        </h5>
+</main2>
+
+    <div class="container">
+        <!-- Login box -->
+        <div class="login-box">
+            <h2>Login</h2>
+            <form action="login.php" method="post">
+                <input type="text" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                <div class="forgot-password">
+                    <a href="forgot_password.php">Forgot Password?</a>
+                </div>
+                <input type="submit" value="Login">
+            </form>
+            <div class="register-link">
+                New User? <a href="register.php">Register here</a>
+            </div>
+        </div>
+    </div>
+
+        <div class="container">
+        <!-- Registration form -->
+        <div class="registration-form">
+            <h2>Register</h2>
+            <form action="register.php" method="post">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit" value="Register">
+            </form>
+            <div class="login-link">
+                Already have an account? <a href="login.php">Login here</a>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="contact">
+        <h3>CONTACT</h3>
+        <p>Email: example@example.com</p>
+        <p>Phone: 123-456-7890</p>
+        <p>Address: 123 Street, City, Country</p>
+    </div>
+    <div class="info">
+        <h3>INFORMATION</h3>
+        <ul>
+        <li>Contact Us</li>
+        <li>Short Codes</li>
+        <li>FAQ's</li>
+        </ul>
+    </div>
+
+    <div class="categories">
+        <h3>CATEGORIES</h3>
+        <ul>
+            <li>Groceries</li>
+            <li>Household</li>
+            <li>Personal Care</li>
+            <li>Packaged Foods</li>
+            <li>Beverages</li>
+        </ul>
+    </div>
+
+    <div class="profile">
+        <h3>PROFILE</h3>
+        <p>Store</p>
+        <p>My Cart</p>
+        <p>Login</p>
+        <p>Create Account</p>
+        <!-- Other profile information -->
+    </div>
+
+    <p>&copy; 2017 Super Market. All Rights Reserved | Designed by Ammara</p>
+</footer>
+
+
+</body>
+</html>

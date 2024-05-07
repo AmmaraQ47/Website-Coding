@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="checkoutpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* header body */
+.nav1{
+    height: 50px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.sale_text{
+    color:whitesmoke;
+    display: flex;
+    font-size: 13PX;
+    width: 50%;
+    margin-left: 90px;
+}
+#shop_now_color{
+    background: none;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    font-size: 13PX;
+    color: orangered;
+    margin-left: 5px;
+}
+.CLH{
+    margin-left: -90px;
+}
+.btn{
+    background: none;
+    border: none;
+}
+.btn a{
+    text-decoration: none;
+    margin-left: 40px;
+    color: aliceblue;
+}
+.fa-cart-arrow-down{
+    color: aliceblue;
+    font-size: 20px;
+    margin-left: 340px;
+    
+}
+.nav2{
+    height: 80px;
+    display: flex;
+    background-color:white;
+    align-items: center;
+    justify-content: space-around;
+}
+.text1{
+    font-size: 15px;
+    display: flex;
+}
+.fa-phone{
+    margin-right: 6px;
+}
+.heading_id{
+    color: #FF7518;
+}
+#search_input{
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 50px;
+    font-size: 12px;
+}
+.fa-magnifying-glass{
+    text-align: center;
+    padding: 9px 7px;
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color:aliceblue;
+    background-color: #FF7518;
+}
+.nav3{
+    height: 50px;
+    background-color: #FF7518;
+    color:aliceblue;
+}
+#nav3_contant{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.fa-caret-down{
+    margin-left: 4px;
+    font-size: 12px;
+}
+
+/* main body */
+.main_nav{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #E0E0D1;
+}
+.fa-house{
+    margin: 0px 21px 0px 81px;
+    color:cornflowerblue;
+}
+.home_text{
+    color: cornflowerblue;
+    margin-right: 4px;
+}
+.checkoutpage{
+    color: gray;
+}
+.main_nav1{
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 68px;
+}
+.color{
+    color: cornflowerblue;
+    margin-left: 5px;
+}
+.table{
+    height: 410px;
+}
+table{
+    width: 90%;
+}
+.Q_p{
+    width: 26%;
+}
+.Price{
+    width: 13%;
+}
+th{
+    height: 30px;
+    background-color: #FF7518;
+    color: white;
+    border: none;
+}
+table, tr, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.whole_table{
+    display: flex;
+    justify-content: center;
+}
+td{
+    text-align: center;
+    height: 95px;
+    padding: 7px 20px;
+}
+.product_pic{
+    width: 70px;
+    height: 70px;
+}
+
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.box2{
+    color: gray;
+    background-color: #E0E0D1;
+}
+.box{
+    border: 1px solid black;
+    padding: 8px 13px;
+    margin: 0px 2px 0px 8px;
+}
+.cross{
+    width: 27px;
+}
+.cross_box{
+    border: 1px solid transparent;
+    background-color: #707070;
+    color: white;
+    height: 27px;
+    padding: 2px 10px;
+    margin: 0px -1px 0px 63px;
+   
+}
+.fa-xmark{
+    padding: 5px 0px;
+}
+.basket{
+    border: 2px solid transparent;
+    display: inline-block;
+    margin: 0px 0px 33px 75px;
+}
+.blue_button{
+    background-color: dodgerblue;
+    padding: 13px 34px;
+    display: inline-block;
+    border: 2px solid transparent;
+    font-size: 19px;
+    color: white
+}
+.products{
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+}
+.full_basket{
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+}
+.basket_total{
+    display: flex;
+    justify-content: space-between;
+}
+.products{
+    margin: 16px 0px;
+}
+.survice{
+    margin-bottom: 30px;
+}
+.product1{
+    margin-top: 20px;
+}
+.basket_total{
+    padding: 15px 0px;
+}
+.fa-angle-left{
+    margin: 0px 7px;
+}
+.shopping_btn{
+    padding: 8px 21px;
+    font-size: 17px;
+    background-color: black;
+    color: white;
+}
+
+
+
+/* footer */
+.footer1{
+    height: 290px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.footer_row_heading{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+.footer_ul{
+    list-style: none;
+}
+.footer_ul h3{
+    margin-bottom: 30px;
+    font-size: 23px;
+}
+.footer_ul li{
+    margin: 13px 3px;
+}
+.fa-arrow-right{
+    color: #FF7518;
+    margin-right: 7px;
+}
+.fa-location-dot{
+    border: 1px solid #FF7518;
+    color:#FF7518;
+    padding: 6px 9px;
+    margin-right: 10px;
+}
+.NYT{
+    margin-left: 39px;
+    margin-top: -4px;
+}
+.fa-envelope{
+    border: 1px solid #FF7518;
+    color:#FF7518;
+    padding: 6px 7px;
+    margin-right: 10px;
+}
+.fi{
+    border: 1px solid #FF7518;
+    color:#FF7518;
+    padding: 6px 7px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.footer2{
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    color: #707070;
+}
+.footer2 p b{
+    color: #FF7518;
+}
+.footer2 p i{
+    margin-right: 8px;
+}
+.footer3{
+    height: 60px;
+    background-color: #0d0d0d;
+    display: flex;
+    align-items: center;
+}
+.last_left_icons{
+    border: 1px solid white;
+    padding: 9px;
+    font-size: 19px;
+    border-radius: 50%;
+    color: white;
+}
+.left_logos{
+    margin-left: 121px;
+}
+.card{
+    height: 30px;
+    width: 43px;
+    background-color: white;
+    
+}
+.right_pic_logos{
+    display: flex;
+    justify-content: end;
+    
+    width: 77%;
+}
+.right_pics{
+    margin-right: 45px;
+}
+.fa-power-off{
+    color: cornflowerblue;
+    margin-top: 6px;
+    font-size: 23px;
+}
+.right_logos{
+    
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="nav1">
+            <div class="sale_text">
+                <p>SALE UP TO 70% OFF. USE CODE "SALE70%".</p>
+                <button id="shop_now_color"><b>SHOP NOW</b></button>
+            </div>
+            <div class="CLH">
+                <button class="btn"><a href="#">Create Account</a></button>
+                <button class="btn"><a href="#">Login</a></button>
+                <button class="btn"><a href="#">Help</a></button>
+            </div>
+            <div class="nav1_logo">
+                <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+        </div>
+        <div class="nav2">
+            <div class="text1">
+                <i class="fa-solid fa-phone"></i>
+                <p>Order online or call us : (+0123) 234 567</p>
+            </div>
+            <div class="heading_id">
+                <h1>F2023287128</h1>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search for a Product..." id="search_input"> 
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="nav3">
+                <ul id="nav3_contant">
+                    <li>Home</li>
+                    <li>Groceries<i class="fa-solid fa-caret-down"></i></li>
+                    <li>Household<i class="fa-solid fa-caret-down"></i></li>
+                    <li>Personal Care<i class="fa-solid fa-caret-down"></i></li>
+                    <li>Packaged Foods<i class="fa-solid fa-caret-down"></i></li>
+                    <li>Beverages<i class="fa-solid fa-caret-down"></i></li>
+                    <li>Gourmet</li>
+                    <li>Offers</li>
+                    <li>Contact</li>
+                </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="main_nav">
+            <i class="fa-solid fa-house"></i>
+            <p class="home_text">Home </p>
+            <p class="checkoutpage"> / Checkout Page</p>
+        </div>
+        <div class="main_nav1">
+            <h4 >YOUR SHIPPING CART CONTAINS:</h4>
+            <h4 class="color"><sub>3</sub> PRODUCTS</h4>
+        </div>
+        <div class="table">
+            <div class="whole_table">
+                <table>
+                    <tr>
+                        <th>SL NO.</th>
+                        <th class="Q_p">Product</th>
+                        <th class="Q_p">Quality</th>
+                        <th>Product Name</th>
+                        <th class="Price">Price</th>
+                        <th class="remove">Remove</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><img src="tata_salt.jpg" alt="pic" class="product_pic"></td>
+                        <td class="boxes">
+                            <div class="box1 box"><i class="fa-solid fa-minus"></i></div>
+                            <div class="box2 box">1</div>
+                            <div class="box3 box"><i class="fa-solid fa-plus"></i></div>
+                        </td>
+                        <td>Tata Salt</td>
+                        <td>$290.00</td>
+                        <td class="cross">
+                            <div class="cross_box">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><img src="fortune.jpg" alt="pic" class="product_pic"></td>
+                        <td class="boxes">
+                            <div class="box1 box"><i class="fa-solid fa-minus"></i></div>
+                            <div class="box2 box">1</div>
+                            <div class="box3 box"><i class="fa-solid fa-plus"></i></div>
+                        </td>
+                        <td>Fortune Oil</td>
+                        <td>$250.00</td>
+                        <td class="cross">
+                            <div class="cross_box">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><img src="Aashirvaad_atta.jpg" alt="pic" class="product_pic"></td>
+                        <td class="boxes">
+                            <div class="box1 box"><i class="fa-solid fa-minus"></i></div>
+                            <div class="box2 box">1</div>
+                            <div class="box3 box"><i class="fa-solid fa-plus"></i></div>
+                        </td>
+                        <td>Aashirvaad Atta</td>
+                        <td>$15.00</td>
+                        <td class="cross">
+                            <div class="cross_box">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="full_basket">
+            <div class="basket">
+                <div class="blue_button">
+                    <p>CONTINUE TO BASKET</p>
+                </div>
+                <div class="products product1">
+                    <p>Product1 - </p>
+                    <p class="basket_prize">$15.00</p>
+                </div>
+                <div class="products">
+                    <p>Product2 - </p>
+                    <p class="basket_prize">$25.00</p>
+                </div>
+                <div class="products">
+                    <p>Product3 - </p>
+                    <p class="basket_prize">$29.00</p>
+                </div>
+                <div class="products survice">
+                    <p>Total Survice Charges - </p>
+                    <p class="basket_prize">$15.00</p>
+                </div>
+                <hr>
+                <div class="basket_total">
+                    <p>Total - </p>
+                    <p class="total_price">$84.00</p>
+                </div>
+                <hr>
+            </div>
+            <div class="continue_shopping_btn">
+                <button type="button" class="shopping_btn"><i class="fa-solid fa-angle-left"></i>Continue Shopping</button>
+            </div>
+        </div>
+    </main>
+
+
+     <footer>
+        <div class="footer1">
+            <div class="footer_row_heading">
+                <ul class="footer_ul">
+                    <h3>CONTACT</h3>
+                    <li><p><i class="fa-solid fa-location-dot"></i>1234k Avenue, 4th block,</p><p class="NYT">New York City</p></li>
+                    <li><p><b><i class="fa-solid fa-envelope"></i>info@example.com</b></p></li>
+                    <li><i class="fa-solid fa-phone fi"></i>+1234 567 567</li>
+                </ul>
+                <ul class="footer_ul">
+                    <h3>INFORMATION</h3>
+                    <li><p><i class="fa-solid fa-arrow-right"></i>About Us</p></li>
+                    <li><p><i class="fa-solid fa-arrow-right"></i>Contact Us</p></li>
+                    <li><p><i class="fa-solid fa-arrow-right"></i>Short Codes</p></li>
+                    <li><p><i class="fa-solid fa-arrow-right"></i>FAQ's</p></li>
+                    <li><p><i class="fa-solid fa-arrow-right"></i>Special Product</p></li>
+                </ul>
+                <ul class="footer_ul">
+                    <h3>CATEGORY</h3>
+                    <li><p><i class="fa-solid fa-arrow-right"></i>Groceries</p></li>
+                    <li><p><i class="fa-solid fa-arrow-right"></i>Household</p></li>
+                    <li><p><i class="fa-solid fa-arrow-right"></i>Personal Care</p></li>
+                    <li><p><i class="fa-solid fa-arrow-right"></i>Packaged Foods</p></li>
+                    <li><p><i class="fa-solid fa-arrow-right"></i>Beverages</p></li>
+                </ul>
+                <ul class="footer_ul">
+                    <h3>PROFILE</h3>
+                    <li><p><i class="fa-solid fa-arrow-right"></i>Store</p></li>
+                    <li><p><i class="fa-solid fa-arrow-right"></i>My Cart</p></li>
+                    <li><p><i class="fa-solid fa-arrow-right"></i>Login</p></li>
+                    <li><p><i class="fa-solid fa-arrow-right"></i>Create Account</p></li>
+                </ul>
+            </div>   
+        </div>
+        <div class="footer2">
+            <p><i class="fa-regular fa-copyright"></i>2017 Super Market. All rights reserved | designed by <b>UMT Student</b></p>
+        </div>
+        <div class="footer3">
+            <div class="left_logos">
+                <i class="fa-brands fa-facebook-f last_left_icons"></i>
+                <i class="fa-brands fa-twitter last_left_icons"></i>
+                <i class="fa-brands fa-instagram last_left_icons"></i>
+                <i class="fa-brands fa-snapchat last_left_icons"></i>
+            </div>
+            <div class="right_pic_logos">
+                <div class="right_pics">
+                    <img src="visa-card.jpg" alt="Payment card" id="visa_card" class="card">
+                    <img src="Paypal-logo.png" alt="Payment card" id="paypal_card" class="card">
+                    <img src="Mastercard_new_logo-.webp" alt="Payment card" id="master_card" class="card">
+                    <img src="sada-pay.png" alt="Payment card" id="sada_card" class="card">
+                </div>
+                <div class="right_logos">
+                    <i class="fa-solid fa-power-off"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
